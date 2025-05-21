@@ -1,0 +1,237 @@
+body{
+    background-color: #800020;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+header{
+    background-color: #800020;
+    color: #F7E7CE;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* no h1 do header, fiz uma animação, para o titulo sumir e aparecer em um intervalo de 7s */
+header > h1{
+    font-size: 40px;
+    animation-name: titulo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes titulo{
+    0% {opacity: 0;}
+    50% {opacity: 50;}
+    100% {opacity: 100;}
+}
+
+/* para as duas tags <a>, dentro do header e dentro do nav, personalizei a fonte, 
+cor de fundo e cor da letra, margem, padding, tirei a decoracao dos elementos escritos nas tags e as coloquei no centro*/
+header > nav > a{  /* dentro header, tem o nav e dentro dele o a */
+    font-size: 20px;
+    background-color: #F7E7CE;
+    color: #800020;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+/* quando colocar o mouse emcima dos elementos criados a partir das tags <a>, 
+coloquei para mudar de cor de fundo e cor da letra em uma transição de 0.3s*/
+header > nav > a:hover{
+    background-color: #f7deb6;
+    color: #800020;
+    transition: 0.3s ease;
+}
+
+
+/* personalizei o espaço que usei para colocar o nome da vinharia e um textinho, 
+junto com uma imagem. Usei o display:flex para ambos ficarem um do lado do outro e o justify-content:space-around, 
+para terem o mesmo espaço entre eles e metade desse espaço na margem */
+#principal{
+    background-color: #F7E7CE;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* mudei a cor do titulo e texto */
+#tituloPrincipal{
+    font-size: 60px;
+    color: #800020;
+}
+#pPrincipal{
+    font-size: 30px;
+    color: #800020;
+}
+
+/* para as duas tags <a>, dentro do header e dentro do nav, personalizei a fonte, 
+cor de fundo e cor da letra, margem, padding, tirei a decoracao dos elementos escritos nas tags e as coloquei no centro*/
+section > div > a{
+    font-size: 20px;
+    background-color: #800020;
+    color: #F7E7CE;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+/* quando colocar o mouse emcima dos elementos criados a partir das tags <a>, 
+coloquei para mudar de cor de fundo e cor da letra em uma transição de 0.3s*/
+section > div > a:hover{
+    background-color: #a4032b;
+    color: #F7E7CE;
+    transition: 0.3s ease;
+}
+
+/* mudei as dimensões da imagem */
+#vinho{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+/* quando passar o mouse por cima da imagem, vai ocorrer uma mudança em sua posição */
+#vinho:hover{
+    transform: translate(10px, 20px);
+}
+
+
+/* personalizei o espaço que usei para colocar um titulo, texto e 
+imagem, para falar sobre a vinharia. Usei o display:flex para ambos ficarem um do lado do outro 
+e o justify-content:space-between, para terem o mesmo espaço entre eles */
+#sobreNos{
+    background-color: #F7E7CE;
+    height: 400px;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* mudei a cor do titulo e texto */
+section > div > h1{
+    font-size: 35px;
+    color: #800020;
+    text-align: left;
+}
+section > div > p{
+    font-size: 18px;
+    text-align: left;
+}
+
+/* mudei as dimensões da imagem e fiz a borda ficar um pouco arredondada*/
+#armazem-vinhos{
+    width: 350px;
+    height: 400px;
+   border-radius: 10px;
+}
+/* quando passar o mouse por cima da imagem, vai ocorrer uma mudança em sua escala */
+#armazem-vinhos:hover{
+    transform: scale(1.1);
+}
+
+/* mudei a cor do titulo e seu tamanho */
+#fisicaFuncionamento{
+    text-align: center;
+    font-size: 35px;
+    color: #800020;
+}
+
+/* personalizei o espaço para colocar uma tabela para mostrar o horário de funcionamento*/
+#funcionamento{
+    background-color: #F7E7CE;
+    height: 400px;
+    padding: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+/* personalizei a tabela para colocar os dias e horários de funcionamento */
+table{
+    border: solid 2px black;
+    margin-top: 20px;
+    width: 100%;
+    height: 75%;
+    font-size: 15px;
+}
+/* mudei cor de fundo, tamanho da letra do th e do td a cor de fundo, alinhei o texto no centro e o tamanho da letra */
+th{
+    background-color: #a4032b;
+    font-size: 20px;
+}
+td{
+    background-color: #f7deb6;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* personalizei, por meio de flex box e outros, o espaço para colocar as informações de contato */
+#contato{
+    background-color: #F7E7CE;
+    flex-direction: column;
+    height: 700px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mudei o tamnho do texto e fiz um alinhamento para o centro e mudei  */
+#fale{
+    text-align: center;
+    font-size: 50px;
+}
+#antesInput{
+    font-size: 25px;
+    font-weight: bold;
+    color: #800020;
+}
+
+/* personalizei os inputs */
+section > div > input{
+    width: 95%;
+    height: 10%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+/* quando clicra nelar a cor de fundo dos inputs mudam */
+section > div > input:focus{
+    background-color: #f7deb6;
+}
+/* quando for digitado um email válido, a borda do input do tipo email fica verde */
+input[type=email]:valid {
+    border: 2px solid green;
+}
+
+/* para as duas tags <a>, dentro do header e dentro do nav, personalizei a fonte, cor de fundo e cor da letra, margem, padding, tirei a decoracao dos elementos escritos nas tags e as coloquei no centro*/
+#enviar{
+    font-size: 20px;
+    width: 75%;
+    height: 10%;
+    background-color: #800020;
+    color: #F7E7CE;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center; 
+}
+/* quando colocar o mouse emcima dos elementos criados a partir das tags <a>, coloquei para mudar de cor de fundo e cor da letra em uma transição de 0.3s*/
+#enviar:hover{
+    background-color: #a52a2a;
+    transition: 0.3 ease;
+}
